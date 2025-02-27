@@ -24,10 +24,6 @@ namespace LoginLogic
                     return bool.Parse(result.Trim());
                 }
             }
-            catch (Exception ex)
-            {
-                return false;
-            }
         }
     }
 }

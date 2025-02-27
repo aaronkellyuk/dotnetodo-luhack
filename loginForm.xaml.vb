@@ -10,12 +10,13 @@ Public Class LoginWindow
         If isValid Then
             MessageBox.Show("Logged in as ", txtUsername.Text, " with Password ", txtPassword.Text)
 
-            Dim mainWindow As New MainWindow()
-            mainWindow.Show()
             Me.Hide()
         Else
             Dim messageBoxResult = MessageBox.Show("Invalid Username or Password")
         End If
+
+        Dim mainWindow As New MainWindow()
+        mainWindow.Show()
     End Sub
 
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
